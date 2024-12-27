@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UAV Traffic Control System</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,9 +14,11 @@
 
         <div class="form-section">
             <h2>Add Destination</h2>
-            <input id="destination" type="text" placeholder="Enter destination">
+            <input id="destination" type="text" placeholder="Enter destination name">
             <button onclick="addDestination()">Add</button>
         </div>
+
+        <div id="map"></div>
 
         <div class="form-section">
             <h2>Load Goods</h2>
