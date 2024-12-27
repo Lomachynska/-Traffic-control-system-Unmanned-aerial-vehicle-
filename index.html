@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV Traffic Control System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UAV Traffic Control System</h1>
+
+        <div class="form-section">
+            <h2>Add Destination</h2>
+            <input id="destination" type="text" placeholder="Enter destination">
+            <button onclick="addDestination()">Add</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Load Goods</h2>
+            <input id="goods" type="text" placeholder="Enter goods description">
+            <button onclick="loadGoods()">Load</button>
+        </div>
+
+        <div class="list-section">
+            <h2>Destinations</h2>
+            <ul id="destination-list"></ul>
+        </div>
+
+        <div class="list-section">
+            <h2>Loaded Goods</h2>
+            <ul id="goods-list"></ul>
+        </div>
+
+        <button class="start-button" onclick="startDelivery()">Start Delivery</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
